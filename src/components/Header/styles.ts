@@ -5,6 +5,8 @@ export const TagHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
+  max-width: 90rem;
+  margin: 0 auto;
 `;
 
 export const Logo = styled.a`
