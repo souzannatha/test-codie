@@ -3,6 +3,7 @@
 import React from "react";
 import { Logo, TagHeader, TagAnchor, TagButton } from "./styles";
 import Image from "next/image";
+import Link from "next/link";
 import pokeballIcon from "../../../public/images/white-pokeball.svg";
 
 export function Header() {
@@ -19,7 +20,9 @@ export function Header() {
         Centro Pokémon
       </Logo>
       <nav>
-        <TagAnchor>Quem somos</TagAnchor>
+        <Link href="/About">
+          <TagAnchor href="/About">Quem somos</TagAnchor>
+        </Link>
         <TagButton>Agendar Consulta</TagButton>
       </nav>
     </TagHeader>
