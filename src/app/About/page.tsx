@@ -7,7 +7,10 @@ import { Container, TagH } from "./style";
 export default function About() {
   return (
     <section>
-      <NavigationSection />
+      <NavigationSection
+        currentSection="Quem somos"
+        desc="A maior rede de tratamento pokémon."
+      />
       <Container>
         <TagH>O Centro Pokémon</TagH>
         <Question title="Como funciona a cura de um pokémon?" />
