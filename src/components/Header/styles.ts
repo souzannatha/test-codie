@@ -9,11 +9,11 @@ export const TagHeader = styled.header`
   margin: 0 auto;
 `;
 
-export const Logo = styled.a`
+export const Logo = styled.a<{ isOpen: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 260px;
+  width: ${({ isOpen }) => (isOpen ? "260px" : "80px")}; /* Ajuste a largura */
   height: 61px;
   padding: 12px 20px;
   border: none;
@@ -24,16 +24,17 @@ export const Logo = styled.a`
   font-weight: bold;
   gap: 1.25rem;
   cursor: pointer;
+  transition: width 0.3s ease; /* Adicione uma transição suave */
 `;
 
 export const TagButton = styled.button`
   width: 172px;
   height: 42px;
-  padding: 12px 28px;
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
   background-color: #e40f0f;
-  font-size: 14;
+  font-size: 14px;
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
@@ -45,4 +46,5 @@ export const TagAnchor = styled.a`
   font-weight: 400;
   color: #000000;
   cursor: pointer;
+  margin-right: 1.5rem;
 `;

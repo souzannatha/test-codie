@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { DivQuestion } from "./style";
 import { FiMinusCircle } from "react-icons/fi";
+import { DivQuestion } from "./style";
 
 interface QuestionProps {
   title: string;
