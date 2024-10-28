@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TagNav = styled.nav`
   gap: 12px;
-  max-width: 90rem;
+  max-width: 120rem;
   height: 11.875rem;
   background-color: #e40f0f;
 
